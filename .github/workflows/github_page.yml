@@ -32,6 +32,6 @@ jobs:
         with:
           target-branch: blog_pages
           repo: vuepress-reco/starjava1024.github.io
-          build_dir: docs/.vuepress/dist
+          build_dir: .vuepress/dist
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
