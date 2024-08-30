@@ -30,7 +30,7 @@ jobs:
       - name: 部署文档
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          target-branch: blog_pages
+          target_branch: blog_pages
           # repo: vuepress-reco/starjava1024.github.io
           build_dir: .vuepress/dist
         env:
