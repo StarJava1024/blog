@@ -1,17 +1,3 @@
-// .vuepress/config.ts
-
-import { defineUserConfig } from 'vuepress'
-import { recoTheme } from 'vuepress-theme-reco'
-
-export default defineUserConfig({
-  theme: recoTheme({
-    docsDir: '/docs',
-    docsRepo: 'https://github.com/StarJava1024/blog',
-    docsBranch: 'main',
-  })
-})
-
-
 module.exports = {
   "title": "blog",
   "description": "兴的博客",
