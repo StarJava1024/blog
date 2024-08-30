@@ -1,6 +1,6 @@
 module.exports = {
   "title": "blog",
-  "description": "兴的博客",
+  "description": "兴の博客",
   "dest": "public",
   "head": [
     [

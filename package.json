@@ -1,14 +1,14 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "author": "Xing",
+  "author": "兴",
   "scripts": {
-    "dev": "vuepress dev . --open --host \"localhost\"",
+    "dev": "vuepress dev --temp .temp",
     "build": "vuepress build ."
   },
   "devDependencies": {
     "vuepress": "1.9.7",
     "vuepress-theme-reco": "1.6.17"
   },
-  "description": "兴的博客"
+  "description": "兴の博客"
 }

@@ -29,9 +29,9 @@ jobs:
       
       - name: 部署文档
         uses: crazy-max/ghaction-github-pages@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         with:
           target_branch: blog_pages
           # repo: vuepress-reco/starjava1024.github.io
           build_dir: .vuepress/dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
