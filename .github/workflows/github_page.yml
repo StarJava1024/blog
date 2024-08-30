@@ -18,7 +18,7 @@ jobs:
       - name: 设置 Node.js 环境
         uses: actions/setup-node@v1
         with:
-          node-version: 14.15.0
+          node-version: 20
           cache: npm
           
       - name: 安装依赖
@@ -32,6 +32,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         with:
-          target_branch: blog_pages
+          branch: blog_pages
           # repo: vuepress-reco/starjava1024.github.io
-          build_dir: .vuepress/dist
+          folder: .vuepress/dist
