@@ -12,7 +12,7 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - name: 检出代码
+      - name: 拉取代码
         uses: actions/checkout@v2
 
       - name: 设置 Node.js 环境
@@ -30,8 +30,8 @@ jobs:
       - name: 部署文档
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          repo: vuepress-reco/vuepress-reco.github.io
-          target_branch: master
-          build_dir: .vuepress
+          target-branch: blog_pages
+          repo: vuepress-reco/starjava1024.github.io
+          build_dir: docs/.vuepress/dist
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
