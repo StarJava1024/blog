@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: 拉取代码
         uses: actions/checkout@v2
+        with:
+          lfs: true
 
       - name: 设置 Node.js 环境
         uses: actions/setup-node@v1
