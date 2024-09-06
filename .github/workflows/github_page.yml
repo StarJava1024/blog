@@ -30,10 +30,13 @@ jobs:
         run: npm run build
       
       - name: 部署文档
-        uses: JamesIves/github-pages-deploy-action@v4
+        # uses: JamesIves/github-pages-deploy-action@v4
+        uses: crazy-max/ghaction-github-pages@v2
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         with:
-          branch: blog_pages
+          target_branch: blog_pages
+          build_dir: docs/.vuepress/dist
+          # branch: blog_pages
           # repo: vuepress-reco/starjava1024.github.io
-          folder: .vuepress/dist
+          # folder: docs/.vuepress/dist
