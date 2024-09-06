@@ -20,7 +20,7 @@ jobs:
       - name: 设置 Node.js 环境
         uses: actions/setup-node@v1
         with:
-          node-version: 20
+          node-version: 14.15
           cache: npm
           
       - name: 安装依赖
